@@ -1,11 +1,17 @@
 import React from 'react'
+import ItemCount from './ItemCount'
 
 const ItemListContainer = ( {greeting} ) => {
+ 
+  const onAdd = (cantidad)=> {
+    console.log(`Seleccionaste ${cantidad}`)
+  }
+ 
   return (
-    <>
-    <h1>Soy ItemListContainer</h1>
-    <h2> {greeting} </h2>
-    </>
+   <div className='container'>
+
+     <ItemCount stock={10} initial={1} onAdd={onAdd}/>
+   </div>
   )
 }
 
