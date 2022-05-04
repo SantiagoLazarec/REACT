@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const Promesa = ({productos}) => {
   return (
    <> 
@@ -17,4 +16,5 @@ const Promesa = ({productos}) => {
 
 };
 
-export default Item
+
+export default ItemDetail 
