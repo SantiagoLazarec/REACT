@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Promesa = ({productos}) => {
+const Item = ({productos}) => {
   return (
    <> 
    {productos.length > 0 ? (
