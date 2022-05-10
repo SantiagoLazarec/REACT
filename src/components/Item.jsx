@@ -1,17 +1,13 @@
 import React from 'react'
 
 
-const Item = ({productos}) => {
+const Item = ({id, nombre, descripcion, imagen}) => {
   return (
    <> 
-   {productos.length > 0 ? (
-     productos.map((producto, index) => (
-      <>
-      <h1 key={index}> {producto.nombre} </h1>
-      </>
-     ))
-   ) : ( <h1> Cargando... </h1>
-   )}
+    <p> {id} </p>
+    <img src={imagen} alt="imagen" />
+    <h1>{nombre}</h1>
+    <p>{descripcion}</p>
    </>
   );
 
