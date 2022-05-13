@@ -1,4 +1,5 @@
 import React from 'react'
+import ItemCount2 from './ItemCount';
 
 const Promesa = ({productos}) => {
   return (
@@ -11,7 +12,10 @@ const Promesa = ({productos}) => {
      ))
    ) : ( <h1> Cargando... </h1>
    )}
-   </>
+
+      <ItemCount2 manejarClick={quntityToAdd} stock={stock}/>
+
+      </>
   );
 
 };
